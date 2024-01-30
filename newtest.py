@@ -83,3 +83,9 @@ result = crew.kickoff()
 
 print("######################")
 print(result)
+
+print("######################")
+print(result.tasks[0].result)
+print("######################")
+print(result.tasks[1].result)
+print("######################")

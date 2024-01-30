@@ -35,6 +35,7 @@ researcher = Agent(
   # llm=ollama_llm # was defined above in the file
   # llm=ChatOpenAI(model_name="gpt-3.5", temperature=0.7)
 )
+
 writer = Agent(
   role='Tech Content Strategist',
   goal='Craft compelling content on tech advancements',

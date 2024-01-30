@@ -4,8 +4,7 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-
-OPENAI_API_KEY = config['openai']['OPENAI_API_KEY'],
+OPENAI_API_KEY = config.get('API', 'OPENAI_API_KEY')
 os.environ["OPENAI_API_KEY"] = str(OPENAI_API_KEY)
 # You can choose to use a local model through Ollama for example.
 #
